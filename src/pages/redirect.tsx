@@ -11,6 +11,22 @@ const RedirectPage = () => {
     const fallbackMessage = document.getElementById("fallbackMessage");
     const manualRedirectLink = document.getElementById("manualRedirect");
 
+    // Google Analytics page view tracking (manual for SPA)
+    if (window.gtag) {
+      window.gtag("config", "AW-16836513990", {
+        page_path: window.location.pathname + window.location.search,
+      });
+    }
+
+    // Google Ads conversion tracking
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-16836513990/label",
+        value: 1.0, // Example value; you can change this based on your needs
+        currency: "INR", // Change the currency if needed
+      });
+    }
+
     if (redirectUrl && manualRedirectLink && fallbackMessage) {
       manualRedirectLink.href = redirectUrl;
       setTimeout(() => {
