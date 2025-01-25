@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/redirect" element={<RedirectPage />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
