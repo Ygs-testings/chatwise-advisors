@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import HostingerReview from "./pages/HostingerReview";
 import Gifts from "./pages/Gifts";
+import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +22,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/hostinger-review" element={<HostingerReview />} />
           <Route path="/gifts" element={<Gifts />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

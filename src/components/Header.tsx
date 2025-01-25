@@ -11,11 +11,14 @@ export const Header = () => {
             BestSuggest
           </Link>
           <nav className="hidden md:flex ml-8 space-x-6">
-            <Link to="/hostinger-review" className="text-gray-600 hover:text-primary">
-              Hostinger Review
+            <Link to="/about" className="text-gray-600 hover:text-primary">
+              About Us
             </Link>
-            <Link to="/gifts" className="text-gray-600 hover:text-primary">
-              Our Gifts
+            <Link to="/privacy" className="text-gray-600 hover:text-primary">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="text-gray-600 hover:text-primary">
+              Terms of Service
             </Link>
           </nav>
         </div>
