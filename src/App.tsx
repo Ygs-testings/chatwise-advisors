@@ -9,6 +9,7 @@ import Gifts from "./pages/Gifts";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import RedirectPage from "./pages/redirect";
 
 const queryClient = new QueryClient();
 
