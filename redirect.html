@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            text-align: center;
+            background: gray;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #2575fc;
+            background: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background: #2575fc;
+            color: white;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_MEASUREMENT_ID"></script>
+    <script>
+        // Initialize GA4
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YOUR_GA4_MEASUREMENT_ID');
+
+        // Function to fetch the 'url' parameter from the query string
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Redirect if 'url' parameter exists, else redirect to WhatsApp
+        window.onload = function () {
+            const redirectUrl = getQueryParam('url');
+            const manualRedirectLink = document.getElementById('manualRedirect');
+
+            if (redirectUrl) {
+                manualRedirectLink.href = redirectUrl;
+                setTimeout(() => {
+                    window.location.href = redirectUrl;
+                }, 500); // Delay of 500ms
+            } else {
+                const fallbackMessage = document.getElementById('fallbackMessage');
+                fallbackMessage.textContent = "No link provided to redirect. Redirecting to our support team.";
+                manualRedirectLink.href = "https://wa.me/919253029002";
+                setTimeout(() => {
+                    window.location.href = "https://wa.me/919253029002";
+                }, 500); // Delay of 500ms
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting...</h1>
+    <p id="fallbackMessage">Please wait while we redirect you to the provided link.</p>
+    <a id="manualRedirect" href="#">Click here if you are not redirected automatically.</a>
+</body>
+
+</html>
