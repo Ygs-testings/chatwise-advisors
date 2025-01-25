@@ -15,7 +15,10 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/hostinger-review" className="text-gray-600 hover:text-primary">
+                <Link
+                  to="/hostinger-review"
+                  className="text-gray-600 hover:text-primary"
+                >
                   Hostinger Review
                 </Link>
               </li>
@@ -40,7 +43,10 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-gray-600 hover:text-primary">
+                <Link
+                  to="/privacy"
+                  className="text-gray-600 hover:text-primary"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -56,7 +62,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://wa.me/919253029002"
+                  href="https://api.whatsapp.com/send/?phone=919253029002&text=Hello+I+Saw+bestsuggest"
                   className="text-gray-600 hover:text-primary"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,8 +71,8 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a 
-                  href="mailto:talk@bestsuggest.in" 
+                <a
+                  href="mailto:talk@bestsuggest.in"
                   className="text-gray-600 hover:text-primary"
                 >
                   Email: talk@bestsuggest.in

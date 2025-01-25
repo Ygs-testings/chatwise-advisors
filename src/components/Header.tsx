@@ -10,7 +10,12 @@ export const Header = () => {
           BestSuggest
         </Link>
         <Button
-          onClick={() => window.open("https://wa.me/919253029002", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://api.whatsapp.com/send/?phone=919253029002&text=Hello+I+Saw+bestsuggest",
+              "_blank"
+            )
+          }
           className="bg-primary hover:bg-primary/90 text-white flex items-center gap-2"
         >
           <MessageCircle size={20} />
