@@ -13,13 +13,13 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
-                  Hosting Advice
+                <a href="/hostinger-review" className="text-gray-600 hover:text-primary">
+                  Hostinger Review
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
-                  VPN Recommendations
+                <a href="/gifts" className="text-gray-600 hover:text-primary">
+                  Our Gifts
                 </a>
               </li>
               <li>
@@ -54,15 +54,15 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://wa.me/your_number"
+                  href="https://wa.me/919253029002"
                   className="text-gray-600 hover:text-primary"
                 >
-                  WhatsApp
+                  WhatsApp: +91 9253029002
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
-                  Email Us
+                <a href="mailto:talk@bestsuggest.in" className="text-gray-600 hover:text-primary">
+                  Email: talk@bestsuggest.in
                 </a>
               </li>
             </ul>
