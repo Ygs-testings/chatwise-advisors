@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 py-12 px-4">
@@ -13,19 +15,19 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/hostinger-review" className="text-gray-600 hover:text-primary">
+                <Link to="/hostinger-review" className="text-gray-600 hover:text-primary">
                   Hostinger Review
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/gifts" className="text-gray-600 hover:text-primary">
+                <Link to="/gifts" className="text-gray-600 hover:text-primary">
                   Our Gifts
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
+                <Link to="/" className="text-gray-600 hover:text-primary">
                   Tools Selection
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -33,19 +35,19 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
+                <Link to="/about" className="text-gray-600 hover:text-primary">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
+                <Link to="/privacy" className="text-gray-600 hover:text-primary">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-primary">
+                <Link to="/terms" className="text-gray-600 hover:text-primary">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,12 +58,17 @@ export const Footer = () => {
                 <a
                   href="https://wa.me/919253029002"
                   className="text-gray-600 hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   WhatsApp: +91 9253029002
                 </a>
               </li>
               <li>
-                <a href="mailto:talk@bestsuggest.in" className="text-gray-600 hover:text-primary">
+                <a 
+                  href="mailto:talk@bestsuggest.in" 
+                  className="text-gray-600 hover:text-primary"
+                >
                   Email: talk@bestsuggest.in
                 </a>
               </li>
