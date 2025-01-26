@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostinger Coupon Redeem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16836513990"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16836513990');
+
+        function trackConversion() {
+            gtag('event', 'conversion', { 'send_to': 'AW-16836513990' });
+        }
+
+        function trackEvent(eventName) {
+            gtag('event', eventName, {
+                'event_category': 'Hostinger Coupon',
+                'event_label': 'User Interaction'
+            });
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-blue-700 text-white py-6">
+        <div class="container mx-auto text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Hostinger_logo.png" alt="Hostinger Logo"
+                class="mx-auto mb-4 h-12">
+            <h1 class="text-3xl font-bold">Best Deal on Hostinger</h1>
+            <p class="text-lg mt-2">Best Discount + Cashback + Free Gifts</p>
+            <div class="mt-6">
+                <button onclick="trackConversion();"
+                    class="bg-yellow-500 text-black py-2 px-6 rounded-full font-semibold shadow-lg hover:bg-yellow-400">Claim
+                    the Deal</button>
+                <div class="mt-4">
+                    <button onclick="trackEvent('contact_us_clicked');"
+                        class="bg-gray-200 text-gray-800 py-2 px-6 rounded-full font-semibold shadow-lg hover:bg-gray-300">Contact
+                        Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offer Details Section -->
+    <section class="container mx-auto mt-12 px-6">
+        <h2 class="text-2xl font-bold text-center mb-4">Offer Details</h2>
+        <p class="text-center text-gray-600">Discover the exclusive Hostinger offer including unbeatable discounts,
+            cashback options, and exciting free gifts. Contact us for complete details and personalized assistance.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto mt-12 px-6">
+        <h2 class="text-2xl font-bold text-center mb-4">FAQs</h2>
+        <div class="space-y-4">
+            <details class="bg-white shadow p-4 rounded-lg">
+                <summary class="font-semibold cursor-pointer">What is the cashback offer?</summary>
+                <p class="mt-2 text-gray-600">We provide cashback on certain plans. Contact us for exact details and
+                    eligibility.</p>
+            </details>
+            <details class="bg-white shadow p-4 rounded-lg">
+                <summary class="font-semibold cursor-pointer">Are the free gifts physical or digital?</summary>
+                <p class="mt-2 text-gray-600">The free gifts are digital tools to enhance your hosting experience.</p>
+            </details>
+            <details class="bg-white shadow p-4 rounded-lg">
+                <summary class="font-semibold cursor-pointer">How can I claim the deal?</summary>
+                <p class="mt-2 text-gray-600">Click on "Claim the Deal" and follow the instructions. For additional
+                    help, contact us.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Affiliate Disclosure Section -->
+    <section class="container mx-auto mt-12 px-6">
+        <h2 class="text-2xl font-bold text-center mb-4">Affiliate Disclosure</h2>
+        <p class="text-center text-gray-600">We may earn a commission for purchases made through the links on this page
+            at no extra cost to you. This supports us in providing better offers and services.</p>
+        <p class="text-center text-red-500 mt-2">This website is not by Hostinger. It is an independent affiliate
+            platform.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Hostinger Deals. All Rights Reserved.</p>
+            <p class="mt-2">Contact us for more details about the offer.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
