@@ -31,6 +31,8 @@
             navigator.clipboard.writeText('HA10');
             alert('Coupon code HA10 copied to clipboard!');
             trackEvent('coupon_copied');
+            trackConversion();
+            window.open('https://be6.in/hostinger-in-secret-link', '_blank');
         }
     </script>
 </head>
@@ -46,7 +48,7 @@
             <div class="mt-6 inline-block bg-white text-gray-800 py-2 px-4 rounded-md shadow">
                 <span>Coupon Code: </span>
                 <span class="font-bold mx-1">HA10</span>
-                <button onclick="copyCoupon();trackEvent('copyCoupon');" class="ml-2 text-blue-600 hover:text-blue-800">
+                <button onclick="copyCoupon();" class="ml-2 text-blue-600 hover:text-blue-800">
                     <i class="fas fa-copy"></i>
                 </button>
             </div>
